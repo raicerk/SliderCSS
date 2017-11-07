@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: slider_animation 20s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes slider_animation {
+    0%, 22% {
+        margin-left: 0;
+    } 25%, 47% {
+        margin-left: -100%;
+    } 50%, 72% {
+        margin-left: -200%;
+    } 75%, 97% {
+        margin-left: -300%;
+    }
+}
